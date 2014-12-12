@@ -8,6 +8,20 @@
 
 #ifndef OOO_Register_h
 #define OOO_Register_h
+class Register{
+    BOOL busy;
+    
+};
+
+
+
+class mapTable{
+    
+};
+
+class logicalMap{
+    
+};
 
 
 #endif

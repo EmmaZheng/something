@@ -8,6 +8,17 @@
 
 #ifndef OOO_IntegerQueue_h
 #define OOO_IntegerQueue_h
+//also known as reservation stations
+class IntegerQueue{
+    
+};
 
+class AddQueue{
+    
+};
+
+class FPQueue{
+    
+};
 
 #endif

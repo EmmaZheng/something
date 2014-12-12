@@ -25,6 +25,10 @@
 /* Begin PBXFileReference section */
 		0F51A17F1A3A6C2300066306 /* OOO */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOO; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F51A1821A3A6C2300066306 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0F51A18C1A3AA8C700066306 /* Register.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Register.h; sourceTree = "<group>"; };
+		0F51A18D1A3AA95E00066306 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		0F51A18E1A3B725A00066306 /* FunctionalUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionalUnit.h; sourceTree = "<group>"; };
+		0F51A18F1A3B953000066306 /* ActiveList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActiveList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				0F51A1821A3A6C2300066306 /* main.cpp */,
+				0F51A18C1A3AA8C700066306 /* Register.h */,
+				0F51A18D1A3AA95E00066306 /* Queue.h */,
+				0F51A18F1A3B953000066306 /* ActiveList.h */,
+				0F51A18E1A3B725A00066306 /* FunctionalUnit.h */,
 			);
 			path = OOO;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 				0F51A1881A3A6C2300066306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
