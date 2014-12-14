@@ -8,20 +8,15 @@
 
 #ifndef OOO_Register_h
 #define OOO_Register_h
-class Register{
-    BOOL busy;
+typedef enum opcode//This is the same as live link. input of trace files
+{
+    L,//load
+    S,//Store
+    I,//integer add or sub
+    B,//branch
+    A,//fadd
+    M //fmul
     
-};
-
-
-
-class mapTable{
-    
-};
-
-class logicalMap{
-    
-};
-
+}opcode;
 
 #endif

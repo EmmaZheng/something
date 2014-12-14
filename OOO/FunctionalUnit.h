@@ -8,28 +8,52 @@
 
 #ifndef OOO_FunctionalUnit_h
 #define OOO_FunctionalUnit_h
+
+
 class ALU{
-    int phase;
-    int bound;
-    BOOL busy;
+public:
+    bool busy;
+    int index;//where is it in the active list.
+    ALU(){
+        index = 0;
+        busy = false;
+    }
 };
 
 class addressFU{
-    int phase;
-    int bound;
-    BOOL busy;
+public:
+    int steps[2] = {-1, -1};
+    bool isFull(){
+        if (steps[0] != -1 && steps[1] != -1) {
+            return true;
+        }
+        return false;
+    }
 };
 
 class FPMul{
-    int phase;
-    int bound;
-    BOOL busy;
+public:
+    int steps[3] = {-1, -1, -1};
+    bool isFull(){
+        if (steps[0] != -1 && steps[1] != -1 && steps[2] != -1) {
+            return true;
+        }
+        return false;
+    }
+    
+
+
 };
 
 class FPAdder{
-    int phase;
-    int bound;
-    BOOL busy;
+public:
+    int steps[3] = {-1, -1, -1};
+    bool isFull(){
+        if (steps[0] != -1 && steps[1] != -1 && steps[2] != -1) {
+            return true;
+        }
+        return false;
+    }
 };
 
 #endif

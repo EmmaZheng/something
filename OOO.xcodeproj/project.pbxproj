@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F51A1831A3A6C2300066306 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F51A1821A3A6C2300066306 /* main.cpp */; };
+		0F51A1941A3D7CC500066306 /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F51A1931A3D7CC500066306 /* Manager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,10 @@
 		0F51A18D1A3AA95E00066306 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		0F51A18E1A3B725A00066306 /* FunctionalUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionalUnit.h; sourceTree = "<group>"; };
 		0F51A18F1A3B953000066306 /* ActiveList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActiveList.h; sourceTree = "<group>"; };
+		0F51A1901A3BBE6E00066306 /* Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		0F51A1911A3D031600066306 /* Master.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Master.h; sourceTree = "<group>"; };
+		0F51A1921A3D207700066306 /* Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		0F51A1931A3D7CC500066306 /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Manager.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +69,12 @@
 				0F51A1821A3A6C2300066306 /* main.cpp */,
 				0F51A18C1A3AA8C700066306 /* Register.h */,
 				0F51A18D1A3AA95E00066306 /* Queue.h */,
+				0F51A1901A3BBE6E00066306 /* Map.h */,
 				0F51A18F1A3B953000066306 /* ActiveList.h */,
 				0F51A18E1A3B725A00066306 /* FunctionalUnit.h */,
+				0F51A1911A3D031600066306 /* Master.h */,
+				0F51A1921A3D207700066306 /* Manager.h */,
+				0F51A1931A3D7CC500066306 /* Manager.cpp */,
 			);
 			path = OOO;
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F51A1831A3A6C2300066306 /* main.cpp in Sources */,
+				0F51A1941A3D7CC500066306 /* Manager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
