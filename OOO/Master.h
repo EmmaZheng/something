@@ -28,18 +28,17 @@ public:
 void Master::init(){
     Manager preManager = Manager();
     Manager curManager = Manager();
+    preManager.init();
+    curManager.init();
     cycle = -1;
 }
 
 
 
 void Master::update(Trace curTrace){
-    if (preManager.activelist.isFull()) {
-        //do nothing about the curTrace
-    }
-    else{
-        curManager.pushToActiveList(curTrace, preManager); //push curTrace to curManager but look at pre manager
-    }
+    
+    curManager.pushToActiveList(curTrace, preManager); //push curTrace to curManager but look at pre manager and also pusht to queues
+    //if the queue is not full then active list must not be full
     curManager.update(preManager);
     preManager = curManager;//to replace with the updated manager
 }

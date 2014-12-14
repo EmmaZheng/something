@@ -12,6 +12,7 @@
 #include <string>
 #include <vector>
 #include "Master.h"
+
 using namespace std;
 
 /*typedef enum opcode//This is the same as live link. input of trace files
@@ -99,8 +100,9 @@ int main(int argc, const char * argv[]) {
     traceFile = readTraceFile();
     for (int i = 0; i < traceFile.size(); i++) {
         master.cycle++;
-        if (master.preManager.activelist.isFull()) {
-            master.update(traceFile[i]);
+        if (master.preManager.activelist.isFull() || master.preManager.getQueueisFull(master.preManager, traceFile[i].opcode)) {
+            //if the activation list is full or the coresponding queue is full then don't fetch stop at decode.
+            //TODO. seems to remember that it needs to decode
             i--;
         }
         else{

@@ -63,23 +63,13 @@ public:
         tail = 0;
         count = 0;
     }
-    bool isFull();
-    bool isEmpty();
+    bool isFull(){
+        return count == 32? true:false;
+    }
+    bool isEmpty(){
+        return count == 0? true:false;
+    }
 };
 
-
-bool ActiveList::isFull(){
-    if (count == 32) {
-        return true;
-    }
-    return false;
-}
-
-bool ActiveList::isEmpty(){
-    if (count == 0) {
-        return true;
-    }
-    else return false;
-}
 
 #endif

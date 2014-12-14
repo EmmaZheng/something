@@ -15,7 +15,7 @@ public:
     bool busy;
     int index;//where is it in the active list.
     ALU(){
-        index = 0;
+        index = -1;
         busy = false;
     }
 };

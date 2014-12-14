@@ -52,10 +52,16 @@ public:
     void update(Manager &premanage);
     
     //update subfunctions
-    void issueToFunctionUnit(Manager &premanage);
+    //void issueToFunctionUnit(Manager &premanage);
     void updatequeues(Manager &premanage);
     void updateFU(Manager &premanage);
     void commit(Manager &premanage);
+    
+    bool getQueueisFull(Manager &premanager, opcode op);//return the opcode cooresponding queue is full or not.
+    
+    void pushToaddQueue(Trace curTrace, Manager &preManager);
+    void pushToIntQueue(Trace curTrace, Manager &preManager);
+    void pushToFPQueue(Trace curTrace, Manager &preManager);
 };
 
 
